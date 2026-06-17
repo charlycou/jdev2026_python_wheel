@@ -1,6 +1,6 @@
 import numpy as np
 
-from .helpers import (
+from helpers import (
     break_rsa_with_primes,
     display_gui,
     rsa_decrypt,
@@ -41,5 +41,5 @@ def run_decrypt_rsa():
     )
 
 
-def main():
+if __name__ == "__main__":
     run_decrypt_rsa()
