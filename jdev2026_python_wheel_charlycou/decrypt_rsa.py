@@ -31,6 +31,9 @@ def run_decrypt_rsa():
     show_text_gui(str(c), title="Encrypted message", label="Encrypted message:")
 
     # Load the list of primes and break RSA to find d
+    from importlib.resources import files
+    data_path = files("jdev2026_python_wheel_charlycou.data") / "primes.npz"
+    primes = np.load(data_path).tolist()
     primes = np.load("primes.npz").tolist()
     d = break_rsa_with_primes(n, e, primes)
 

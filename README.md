@@ -17,12 +17,12 @@ The prime numbers are extracted from https://t5k.org/lists/small/millions/
 ```bash
 deactivate
 rm -rf rsa_demo_env
-python -m venv rsa_demo_env
+python3 -m venv rsa_demo_env
 source rsa_demo_env/bin/activate  # On Windows: rsa_demo_env\Scripts\activate
 pip install --upgrade pip setuptools
 pip install numpy
 cd jdev2026_python_wheel
-python decrypt_rsa.py
+python3 decrypt_rsa.py
 ```
 
 We will repeat the creation of a new virtual environment and the installation of the package several times during the workshop to test the package at different stages of its development. It's a good practice to create a new virtual environment for each test to avoid any issues with dependencies and to have a clean environment. Create the virtual environment in another folder to avoid any issues with relative paths.  
