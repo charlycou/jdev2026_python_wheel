@@ -151,7 +151,7 @@ pip install --index-url https://test.pypi.org/simple/ <package_name>
 <entry_point_command>
 ```
 
-# Appendix:
+# Appendix:  
 
 The automatization can also be done with Gitlab with Build/Pipelines section. You have an example in `.gitlab-ci.yml`. You can copy paste your PyPI API token in Settings/CI/CD/Variables/Add Variable.
 
