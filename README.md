@@ -153,6 +153,8 @@ pip install --index-url https://test.pypi.org/simple/ <package_name>
 
 # Appendix:  
 
+
+
 The automatization can also be done with Gitlab with Build/Pipelines section. You have an example in `.gitlab-ci.yml`. You can copy paste your PyPI API token in Settings/CI/CD/Variables/Add Variable.
 
 A usefull tool I like is cibuildwheel (https://github.com/pypa/cibuildwheel). It allows to build wheels for multiple platforms (Windows, MacOS, Linux) and multiple Python versions. It can be used in Github Actions or Gitlab CI/CD. It's also very usefull when you need to compile C++ code in your package: the librairies are automatically "delocated".
